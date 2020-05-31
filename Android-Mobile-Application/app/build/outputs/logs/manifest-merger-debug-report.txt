@@ -1,0 +1,351 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:2:1-54:12
+MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\6978a54e4aac1467f19d82dfb52eafa5\jetified-navigation-ui-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\e515d40e627c4e0412a7c5fa3f288da9\material-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.rengwuxian.materialedittext:library:2.1.4] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\3932d0e842eef263d99254c4bfca1f22\jetified-library-2.1.4\AndroidManifest.xml:2:1-10:12
+MERGED from [com.github.javiersantos:MaterialStyledDialogs:2.1] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\df40689cda57329f056990fe9ee0895d\jetified-MaterialStyledDialogs-2.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.afollestad.material-dialogs:core:0.9.0.2] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\d1cd43ec71ea752d16e758f4c94a580f\jetified-core-0.9.0.2\AndroidManifest.xml:2:1-15:12
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.1.7] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\62027a4400534153a5a8ea536625c3bb\jetified-library-1.1.7\AndroidManifest.xml:6:1-16:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\37ec02f661e3547c5499ecdfd9f3cd1f\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\1964611a1907e3ea07b40ce4c516c284\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\aeb78aaf12926810b940dcc273431a57\navigation-fragment-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\e7f6f6d73de1836643c7170cea8cbaf8\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\ccc4f60e4549c263b614feec2a027fa2\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\abc680e55824c418c024460e31034ed4\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\f023d2a83fa18e6545968170e4e35498\navigation-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\ba2af06f417607d7ef1ca9f201a0d139\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\a6ce3afbff3f1ae3fa1fe13048b173d9\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\4336eb59d7e582316997572d66343b15\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\9769f5859f74fee92a159a120c1a97ee\fragment-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\1b8bf5e23e9a70b030eaeb641b1409a0\lifecycle-process-2.2.0\AndroidManifest.xml:17:1-32:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\81be015ee16d7afb6bf291abe682c377\lifecycle-service-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\b0149f4c947c05b760f5cf06ab6d8060\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\8d8ddb8800374545c224b77b34d0f1a2\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\dd07e922b5233b833d82ee834e6becf7\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\beed28e19d4f55ab2c17aff66e0bc400\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\e0d80e5c178a0db065288a448fc598ef\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\331f61861c2d3a925f2252286afb1f53\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\f3997ce16a5c00ae84a772d300d0e1e8\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\34085af895daa23049fd0af188e6a001\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\eb11c4797d5d5b24d5dcbbebe26babf4\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\2bf200c3ed6f794fd90e7a7e5e0ea6de\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\740a70a0c89c8c085b6e012b4bd7790e\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\31dc29ba3158cee4b1ca2bf2f6ff141b\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\435f1166e6a428a0025d9cd273cb35a2\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common:2.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\f4a13a33734b6c4f6b085128e7a0ff7b\navigation-common-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\de06683d96412d89b8bbbf7e6b999dda\activity-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\049d2c70f00968fcb42e43317b0d8e71\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\a122ffd4c0fe608c1613ec63d113b06d\lifecycle-livedata-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\a74ec278edce9da3ecbff9a1cdf4887a\lifecycle-viewmodel-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\41aa050c27dd9b1a6a028e37b38caee9\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\384e1b5d703f7ead48bd253f34125353\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\7acef2a7bfef3795312317efec15d83e\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\b04e51bce09da5abc9e72471e05ae96d\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\9d52be8c254a228a91eaf05f51d52923\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\9093771a98b01557e81860f4122d7892\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\7ec682ca46f5c90ea9a9e0cba0c0310a\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\d4ef17d609918d2a5f5a86d1ea02678f\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\aa91d8d2653c363bbd5da9d9892260d3\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\3ac4dcff7b1cf936fa920d2e581d0bc2\rxandroid-2.0.1\AndroidManifest.xml:15:1-21:12
+INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:2:1-54:12
+	package
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:3:5-32
+		INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:2:1-54:12
+		INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:2:1-54:12
+		INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:5:5-80
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:5:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:7:5-71
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:7:22-68
+uses-permission#android.permission.STORAGE
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:9:5-66
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:9:22-63
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:10:22-64
+application
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:12:5-52:19
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\e515d40e627c4e0412a7c5fa3f288da9\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\e515d40e627c4e0412a7c5fa3f288da9\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.afollestad.material-dialogs:core:0.9.0.2] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\d1cd43ec71ea752d16e758f4c94a580f\jetified-core-0.9.0.2\AndroidManifest.xml:13:5-20
+MERGED from [com.afollestad.material-dialogs:core:0.9.0.2] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\d1cd43ec71ea752d16e758f4c94a580f\jetified-core-0.9.0.2\AndroidManifest.xml:13:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\e7f6f6d73de1836643c7170cea8cbaf8\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\e7f6f6d73de1836643c7170cea8cbaf8\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\1b8bf5e23e9a70b030eaeb641b1409a0\lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\1b8bf5e23e9a70b030eaeb641b1409a0\lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.core:core:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:16:9-35
+	android:label
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:14:9-41
+	android:roundIcon
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:15:9-44
+	android:allowBackup
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:17:9-40
+activity#com.example.quran.supplication
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:18:9-59
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:18:19-47
+activity#com.example.quran.learn_supplication
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:19:9-56
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:19:19-53
+activity#com.example.quran.kalma
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:20:9-43
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:20:19-40
+activity#com.example.quran.learn_kalimas
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:21:9-51
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:21:19-48
+activity#com.example.quran.qibla
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:22:9-43
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:22:19-40
+activity#com.example.quran.check_accuracy
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:23:9-52
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:23:19-49
+activity#com.example.quran.ForgotPassword
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:24:9-52
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:24:19-49
+activity#com.example.quran.log_in
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:25:9-44
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:25:19-41
+activity#com.example.quran.qari_accent_selection
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:26:9-59
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:26:19-56
+activity#com.example.quran.words_evaluation
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:27:9-54
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:27:19-51
+activity#com.example.quran.characters_diacritics_evaluation
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:28:9-70
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:28:19-67
+activity#com.example.quran.characters_evaluation
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:29:9-59
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:29:19-56
+activity#com.example.quran.level_selection_evaluation
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:30:9-64
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:30:19-61
+activity#com.example.quran.first_activity
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:31:9-34:59
+	android:label
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:33:13-66
+	android:theme
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:34:13-56
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:32:13-43
+activity#com.example.quran.splashActivity
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:35:9-41:20
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:35:19-49
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:36:13-40:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:37:17-69
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:37:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:39:17-77
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:39:27-74
+activity#com.example.quran.characters
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:42:9-48
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:42:19-45
+activity#com.example.quran.characters_diacritics
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:43:9-59
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:43:19-56
+activity#com.example.quran.words
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:44:9-43
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:44:19-40
+activity#com.example.quran.higriCalender
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:45:9-51
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:45:19-48
+activity#com.example.quran.level_selection
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:46:9-53
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:46:19-50
+activity#com.example.quran.tajweed_rules
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:47:9-51
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:47:19-48
+meta-data#preloaded_fonts
+ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:49:9-51:57
+	android:resource
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:51:13-54
+	android:name
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml:50:13-43
+uses-sdk
+INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml
+MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\6978a54e4aac1467f19d82dfb52eafa5\jetified-navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\6978a54e4aac1467f19d82dfb52eafa5\jetified-navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\e515d40e627c4e0412a7c5fa3f288da9\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\e515d40e627c4e0412a7c5fa3f288da9\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.rengwuxian.materialedittext:library:2.1.4] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\3932d0e842eef263d99254c4bfca1f22\jetified-library-2.1.4\AndroidManifest.xml:6:5-8:41
+MERGED from [com.rengwuxian.materialedittext:library:2.1.4] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\3932d0e842eef263d99254c4bfca1f22\jetified-library-2.1.4\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.javiersantos:MaterialStyledDialogs:2.1] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\df40689cda57329f056990fe9ee0895d\jetified-MaterialStyledDialogs-2.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.javiersantos:MaterialStyledDialogs:2.1] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\df40689cda57329f056990fe9ee0895d\jetified-MaterialStyledDialogs-2.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.afollestad.material-dialogs:core:0.9.0.2] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\d1cd43ec71ea752d16e758f4c94a580f\jetified-core-0.9.0.2\AndroidManifest.xml:8:5-11:75
+MERGED from [com.afollestad.material-dialogs:core:0.9.0.2] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\d1cd43ec71ea752d16e758f4c94a580f\jetified-core-0.9.0.2\AndroidManifest.xml:8:5-11:75
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.1.7] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\62027a4400534153a5a8ea536625c3bb\jetified-library-1.1.7\AndroidManifest.xml:12:5-14:41
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.1.7] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\62027a4400534153a5a8ea536625c3bb\jetified-library-1.1.7\AndroidManifest.xml:12:5-14:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\37ec02f661e3547c5499ecdfd9f3cd1f\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\37ec02f661e3547c5499ecdfd9f3cd1f\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\1964611a1907e3ea07b40ce4c516c284\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\1964611a1907e3ea07b40ce4c516c284\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\aeb78aaf12926810b940dcc273431a57\navigation-fragment-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\aeb78aaf12926810b940dcc273431a57\navigation-fragment-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\e7f6f6d73de1836643c7170cea8cbaf8\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\e7f6f6d73de1836643c7170cea8cbaf8\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\ccc4f60e4549c263b614feec2a027fa2\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\ccc4f60e4549c263b614feec2a027fa2\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\abc680e55824c418c024460e31034ed4\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\abc680e55824c418c024460e31034ed4\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\f023d2a83fa18e6545968170e4e35498\navigation-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\f023d2a83fa18e6545968170e4e35498\navigation-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\ba2af06f417607d7ef1ca9f201a0d139\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\ba2af06f417607d7ef1ca9f201a0d139\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\a6ce3afbff3f1ae3fa1fe13048b173d9\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\a6ce3afbff3f1ae3fa1fe13048b173d9\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\4336eb59d7e582316997572d66343b15\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\4336eb59d7e582316997572d66343b15\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\9769f5859f74fee92a159a120c1a97ee\fragment-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\9769f5859f74fee92a159a120c1a97ee\fragment-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\1b8bf5e23e9a70b030eaeb641b1409a0\lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\1b8bf5e23e9a70b030eaeb641b1409a0\lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\81be015ee16d7afb6bf291abe682c377\lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\81be015ee16d7afb6bf291abe682c377\lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\b0149f4c947c05b760f5cf06ab6d8060\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\b0149f4c947c05b760f5cf06ab6d8060\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\8d8ddb8800374545c224b77b34d0f1a2\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\8d8ddb8800374545c224b77b34d0f1a2\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\dd07e922b5233b833d82ee834e6becf7\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\dd07e922b5233b833d82ee834e6becf7\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\beed28e19d4f55ab2c17aff66e0bc400\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\beed28e19d4f55ab2c17aff66e0bc400\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\e0d80e5c178a0db065288a448fc598ef\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\e0d80e5c178a0db065288a448fc598ef\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\331f61861c2d3a925f2252286afb1f53\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\331f61861c2d3a925f2252286afb1f53\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\f3997ce16a5c00ae84a772d300d0e1e8\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\f3997ce16a5c00ae84a772d300d0e1e8\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\34085af895daa23049fd0af188e6a001\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\34085af895daa23049fd0af188e6a001\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\eb11c4797d5d5b24d5dcbbebe26babf4\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\eb11c4797d5d5b24d5dcbbebe26babf4\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\2bf200c3ed6f794fd90e7a7e5e0ea6de\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\2bf200c3ed6f794fd90e7a7e5e0ea6de\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\740a70a0c89c8c085b6e012b4bd7790e\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\740a70a0c89c8c085b6e012b4bd7790e\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\31dc29ba3158cee4b1ca2bf2f6ff141b\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\31dc29ba3158cee4b1ca2bf2f6ff141b\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\435f1166e6a428a0025d9cd273cb35a2\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\435f1166e6a428a0025d9cd273cb35a2\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\f4a13a33734b6c4f6b085128e7a0ff7b\navigation-common-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\f4a13a33734b6c4f6b085128e7a0ff7b\navigation-common-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\de06683d96412d89b8bbbf7e6b999dda\activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\de06683d96412d89b8bbbf7e6b999dda\activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\049d2c70f00968fcb42e43317b0d8e71\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\049d2c70f00968fcb42e43317b0d8e71\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\a122ffd4c0fe608c1613ec63d113b06d\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\a122ffd4c0fe608c1613ec63d113b06d\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\a74ec278edce9da3ecbff9a1cdf4887a\lifecycle-viewmodel-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\a74ec278edce9da3ecbff9a1cdf4887a\lifecycle-viewmodel-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\41aa050c27dd9b1a6a028e37b38caee9\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\41aa050c27dd9b1a6a028e37b38caee9\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\384e1b5d703f7ead48bd253f34125353\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\384e1b5d703f7ead48bd253f34125353\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\7acef2a7bfef3795312317efec15d83e\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\7acef2a7bfef3795312317efec15d83e\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\b04e51bce09da5abc9e72471e05ae96d\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\b04e51bce09da5abc9e72471e05ae96d\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\9d52be8c254a228a91eaf05f51d52923\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\9d52be8c254a228a91eaf05f51d52923\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\9093771a98b01557e81860f4122d7892\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\9093771a98b01557e81860f4122d7892\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\7ec682ca46f5c90ea9a9e0cba0c0310a\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\7ec682ca46f5c90ea9a9e0cba0c0310a\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\d4ef17d609918d2a5f5a86d1ea02678f\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\d4ef17d609918d2a5f5a86d1ea02678f\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\aa91d8d2653c363bbd5da9d9892260d3\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\aa91d8d2653c363bbd5da9d9892260d3\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\3ac4dcff7b1cf936fa920d2e581d0bc2\rxandroid-2.0.1\AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\3ac4dcff7b1cf936fa920d2e581d0bc2\rxandroid-2.0.1\AndroidManifest.xml:19:5-43
+INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.afollestad.material-dialogs:core:0.9.0.2] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\d1cd43ec71ea752d16e758f4c94a580f\jetified-core-0.9.0.2\AndroidManifest.xml:11:9-72
+	android:targetSdkVersion
+		INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\MOHSIN\AndroidStudioProjects\quran\app\src\main\AndroidManifest.xml
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\1b8bf5e23e9a70b030eaeb641b1409a0\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\1b8bf5e23e9a70b030eaeb641b1409a0\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\1b8bf5e23e9a70b030eaeb641b1409a0\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\1b8bf5e23e9a70b030eaeb641b1409a0\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MOHSIN\.gradle\caches\transforms-2\files-2.1\1b8bf5e23e9a70b030eaeb641b1409a0\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79

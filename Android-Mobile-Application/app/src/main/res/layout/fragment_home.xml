@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+
+    <Button
+        android:id="@+id/learn"
+        android:layout_width="210dp"
+        android:layout_height="64dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/open_sans"
+        android:shadowColor="@color/design_default_color_on_primary"
+        android:shadowRadius="@dimen/material_emphasis_medium"
+        android:text="Learn"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695" />
+
+    <Button
+        android:id="@+id/evaluate"
+        android:layout_width="210dp"
+        android:layout_height="64dp"
+        android:background="@drawable/custom_button_3"
+        android:fontFamily="@font/open_sans"
+        android:text="Evaluate"
+        android:textColor="#141414"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.869" />
+
+    <Button
+        android:id="@+id/tajweed"
+        android:layout_width="140dp"
+        android:layout_height="121dp"
+        android:background="@drawable/custom_button_2"
+        android:drawableTop="@drawable/tajweed_pic"
+        android:fontFamily="@font/open_sans"
+        android:text="Tajweed rules"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <Button
+        android:id="@+id/calender"
+        android:layout_width="140dp"
+        android:layout_height="121dp"
+        android:background="@drawable/custom_button_2"
+        android:drawableTop="@drawable/calender"
+        android:fontFamily="@font/open_sans"
+        android:text="Islamic Calender"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <Button
+        android:id="@+id/kalimas"
+        android:layout_width="140dp"
+        android:layout_height="121dp"
+        android:background="@drawable/custom_button_2"
+        android:drawableTop="@drawable/kalimas"
+        android:fontFamily="@font/open_sans"
+        android:text="Kalimas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418" />
+
+    <Button
+        android:id="@+id/supplication"
+        android:layout_width="140dp"
+        android:layout_height="121dp"
+        android:background="@drawable/custom_button_2"
+        android:drawableTop="@drawable/supplication"
+        android:fontFamily="@font/open_sans"
+        android:text="Supplications"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
