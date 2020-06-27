@@ -104,7 +104,7 @@ public class ForgotPassword extends AppCompatActivity implements View.OnClickLis
            }
         }else{
 
-            if(new_password.getText().toString().length()>5){
+            if(new_password.getText().toString().length()>4){
             Toast.makeText(this, "Password updated Successfully!",Toast.LENGTH_SHORT).show();
 
 

@@ -53,8 +53,7 @@ public class characters_diacritics extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    setWhiteBackGround();
-                    cardView.setCardBackgroundColor(0xF1F1F1);
+                    cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
                 if(check==0) {
                     playAudio(finalI);
                 }else{
@@ -66,8 +65,6 @@ public class characters_diacritics extends AppCompatActivity {
             });
         }
     }
-
-/////////////////////////////////////////////////-- Handling mediaPlayer////////////////////////////////////////////////////////////////////////////////
 
 
 

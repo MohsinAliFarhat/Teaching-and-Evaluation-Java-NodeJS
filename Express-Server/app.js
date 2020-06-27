@@ -51,7 +51,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
       chunks=[];
       req.on('data',function(chunk){
         chunks.push(chunk);
-      
+       
       });
       
       req.on('end',function(){
@@ -671,7 +671,7 @@ fs.writeFile(path,data,'binary',function(err){
   var exec = require("child_process").exec; 
   //running python script
   console.log(`[INFO] Computing`);
-  exec(`C:\\Users\\MOHSIN\\Anaconda3\\python.exe python-scripts\\segmented_diacritic_4`,function(err,stdout,stderr){
+  exec(`C:\\Users\\MOHSIN\\Anaconda3\\python.exe python-scripts\\segmented_diacritic_4.py`,function(err,stdout,stderr){
     if(err){
         console.log(err);
         return;
@@ -868,7 +868,7 @@ fs.writeFile(path,data,'binary',function(err){
 
 app.listen(3000, () => {
   console.log(
-    "WebService Running on port 3000"
+    "Express Server Running on port 3000"
   );
 });
 

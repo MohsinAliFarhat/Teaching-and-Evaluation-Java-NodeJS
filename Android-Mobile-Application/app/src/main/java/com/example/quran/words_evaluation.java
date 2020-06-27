@@ -1,6 +1,8 @@
 package com.example.quran;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
@@ -56,6 +58,7 @@ public class words_evaluation extends AppCompatActivity {
     int current_lvl=0;
     String Email_of_user,lvl;
     double total,Acc_value=0.0;
+    private CardView cardView = null;
 
     CompositeDisposable compositeDisposable = new CompositeDisposable();
     IMyservice iMyService;
@@ -102,7 +105,7 @@ public class words_evaluation extends AppCompatActivity {
         //Loop all child item of Main Grid
         for (int i = 0; i < mainGrid.getChildCount()-1; i++) {
             //You can see , all child item is CardView , so we just cast object to CardView
-            final CardView cardView = (CardView) mainGrid.getChildAt(i);
+            cardView = (CardView) mainGrid.getChildAt(i);
             final int finalI = i;
             cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -110,7 +113,6 @@ public class words_evaluation extends AppCompatActivity {
                 {
 
                     setWhiteBackGround();
-                    cardView.setCardBackgroundColor(0xA7A7A7);
                     playAudio(finalI);
 
 
@@ -156,7 +158,8 @@ public class words_evaluation extends AppCompatActivity {
         image0.setBackground(img1_bck);
         image1.setBackground(img2_bck);
         image2.setBackground(img3_bck);
-
+        cardView = (CardView) mainGrid.getChildAt(words_clicked);
+        cardView.setCardBackgroundColor(0xA7A7A7);
         if(x!= 3 && x!=4)
         {
 
@@ -192,21 +195,22 @@ public class words_evaluation extends AppCompatActivity {
             total = (total/3)*100;
 
 
+            String accuracy_previous_level = "N/A";
 
-
-            current_lvl=level;
+                current_lvl=level;
             current_lvl++;
             lvl= "lvl_"+current_lvl;
             Acc_value=total;
             Email_of_user= userEmail;
             if(acc_0!=-1 && acc_1!=-1 && acc_2!=-1) {
+                accuracy_previous_level = (total)+"%";
                 send_word_accu(Email_of_user,lvl,Acc_value);
 
             }else{
 //                Toast.makeText(this,"Accuracy not saved(Attempt all words to save accuracy)",Toast.LENGTH_SHORT).show();
             }
 
-
+;
 
             total = 0;
             acc_0=-1;
@@ -218,6 +222,23 @@ public class words_evaluation extends AppCompatActivity {
             if(level<2) {
                 level++;
                 levelno.setText("Lesson - "+(level+1));
+                String next = (level+2)+"";
+                if(level==2){
+                    next = "N/A";
+                }
+                new AlertDialog.Builder(this)
+                        .setTitle("Lesson Information")
+                        .setMessage("Current Lesson          : "+(level+1)+"\n"
+                                +   "Lesson(s) Remaining: "+(3-(level+1))+"\n"
+                                +   "Next Lesson                : "+(next)+"\n"
+                                +   "Accuracy of previous Lesson: "+accuracy_previous_level)
+                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                // Continue with delete operation
+                            }
+                        })
+//                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .show();
             }
 
             if(level==1){
@@ -361,6 +382,7 @@ public class words_evaluation extends AppCompatActivity {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             dialog.dismiss();
+            cardView = (CardView) mainGrid.getChildAt(words_clicked);
 
             if(level==0) {
 
@@ -404,28 +426,20 @@ public class words_evaluation extends AppCompatActivity {
 
     }
 
-    private void setWhiteBackGround(){
-        for (int i = 0; i < mainGrid.getChildCount()-1; i++) {
-            //You can see , all child item is CardView , so we just cast object to CardView
-            final CardView cardView = (CardView) mainGrid.getChildAt(i);
-            cardView.setCardBackgroundColor(Color.parseColor("#FFFFFF"));
-        }
-    }
+
     public void checkNazala(String sound){
 
 
         if(sound.equals("nazala")){
 
-
-
-            image0.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(words_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_0=1;
 
         }else{
 
-            image0.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(words_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_0=0;
         }
@@ -435,13 +449,13 @@ public class words_evaluation extends AppCompatActivity {
     public void checkKhalaqa(String sound){
 
         if(sound.equals("khalaqa")){
-            image1.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(words_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_1=1;
 
         }else{
-            image1.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(words_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_1=0;
         }
@@ -452,13 +466,13 @@ public class words_evaluation extends AppCompatActivity {
 
 
         if(sound.equals("sadaqa")){
-            image2.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(words_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_2=1;
 
         }else{
-            image2.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(words_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_2=0;
 
@@ -471,13 +485,13 @@ public class words_evaluation extends AppCompatActivity {
 
         if(sound.equals("yadaka")){
 
-            image0.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(words_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_0=1;
         }else{
 
-            image0.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(words_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_0=0;
         }
@@ -488,13 +502,13 @@ public class words_evaluation extends AppCompatActivity {
 
         if(sound.equals("balagha")){
 
-            image1.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(words_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_1=1;
         }else{
 
-            image1.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(words_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_1=0;
         }
@@ -505,13 +519,13 @@ public class words_evaluation extends AppCompatActivity {
 
         if(sound.equals("tabaaw")){
 
-            image2.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(words_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_2=1;
         }else{
 
-            image2.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(words_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_2=0;
 
@@ -523,13 +537,13 @@ public class words_evaluation extends AppCompatActivity {
 
         if(sound.equals("jaawla")){
 
-            image0.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(words_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_0=1;
         }else{
 
-            image0.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(words_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_0=0;
         }
@@ -540,13 +554,13 @@ public class words_evaluation extends AppCompatActivity {
 
         if(sound.equals("faawla")){
 
-            image1.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(words_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_1=1;
         }else{
 
-            image1.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(words_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_1=0;
         }
@@ -558,17 +572,23 @@ public class words_evaluation extends AppCompatActivity {
 
         if(sound.equals("nazara")){
 
-            image1.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(words_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_2=1;
         }else{
 
-            image1.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(words_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_2=0;
         }
 
     }
-
+    private void setWhiteBackGround(){
+        for (int i = 0; i < mainGrid.getChildCount()-1; i++) {
+            //You can see , all child item is CardView , so we just cast object to CardView
+            final CardView cardView = (CardView) mainGrid.getChildAt(i);
+            cardView.setCardBackgroundColor(Color.parseColor("#FFFFFF"));
+        }
+    }
 }

@@ -58,8 +58,7 @@ public class words extends AppCompatActivity {
                 public void onClick(View view)
                 {
 
-                    setWhiteBackGround();
-                    cardView.setCardBackgroundColor(0xF1F1F1);
+                    cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
 
                     if(check==0) {
                         playAudio(finalI);

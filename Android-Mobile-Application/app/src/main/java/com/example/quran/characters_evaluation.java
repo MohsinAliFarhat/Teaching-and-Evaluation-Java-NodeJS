@@ -2,23 +2,21 @@ package com.example.quran;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.GridLayout;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -53,12 +51,13 @@ public class characters_evaluation extends AppCompatActivity {
     public static int cat = -1;
     private boolean startRecording = true;
     public static int level_send_to_server = -1;
+
     // Requesting permission to RECORD_AUDIO
 
     private boolean permissionToRecordAccepted = false;
     private String [] permissions = {Manifest.permission.RECORD_AUDIO};
+    private CardView cardView = null;
 
-    private PopupWindow mPopupWindow;
     private static final String SERVER = "http://192.168.43.85:3000/";
     View v = null;
 
@@ -143,43 +142,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(LAYOUT_INFLATER_SERVICE);
 
-        // Inflate the custom layout/view
-        View customView = inflater.inflate(R.layout.pop_up_window,null);
-
-        mPopupWindow = new PopupWindow(
-                customView,
-                LinearLayout.LayoutParams.WRAP_CONTENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT
-        );
-
-        // Set an elevation value for popup window
-        // Call requires API level 21
-        if(Build.VERSION.SDK_INT>=21){
-            mPopupWindow.setElevation(5.0f);
-        }
-
-        ImageButton closeButton = (ImageButton) customView.findViewById(R.id.ib_close);
-
-        closeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Dismiss the popup window
-                mPopupWindow.dismiss();
-            }
-        });
-
-
 
         mainGrid = (GridLayout)findViewById(R.id.mainGrid);
         setSingleEvent(mainGrid);
 
 
 
-        findViewById(R.id.rl).post(new Runnable() {
-            public void run() {
-                mPopupWindow.showAtLocation(findViewById(R.id.rl), Gravity.CENTER, 0, 0);
-            }
-        });
+
         recorder_new=new AudioRecorder();
 
         v = findViewById(android.R.id.content).getRootView();
@@ -188,14 +157,11 @@ public class characters_evaluation extends AppCompatActivity {
     }
 
 
-
-
-
     private void setSingleEvent(GridLayout mainGrid) {
         //Loop all child item of Main Grid
         for (int i = 0; i < mainGrid.getChildCount()-1; i++) {
             //You can see , all child item is CardView , so we just cast object to CardView
-      final  CardView cardView = (CardView) mainGrid.getChildAt(i);
+            cardView = (CardView) mainGrid.getChildAt(i);
             final int finalI = i;
             cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -203,7 +169,6 @@ public class characters_evaluation extends AppCompatActivity {
                 {
 
                     setWhiteBackGround();
-                    cardView.setCardBackgroundColor(0xA7A7A7);
                     checkButtonClicked(finalI);
 
 
@@ -258,13 +223,9 @@ public class characters_evaluation extends AppCompatActivity {
     private void checkButtonClicked(int x)
     {
 
-
-
         letter_clicked = x;
-
-        image0.setBackground(img1_bck);
-        image1.setBackground(img2_bck);
-        image2.setBackground(img3_bck);
+        cardView = (CardView) mainGrid.getChildAt(letter_clicked);
+        cardView.setCardBackgroundColor(0xA7A7A7);
 
         if(x!=3&&x!=4) {
             if (flag == true) {
@@ -296,11 +257,9 @@ public class characters_evaluation extends AppCompatActivity {
 
         {
 
-
-
             total = acc_0+acc_1+acc_2;
             total = (total/3)*100;
-
+            String accuracy_previous_level = "N/A";
 
 
 
@@ -311,13 +270,11 @@ public class characters_evaluation extends AppCompatActivity {
             Email_of_user= userEmail;
 
             if(acc_0!=-1 && acc_1!=-1 && acc_2!=-1) {
+                accuracy_previous_level = (total)+"%";
                 send_letter_accu(Email_of_user,lvl,Acc_value);
             }else{
 //                Toast.makeText(this,"Accuracy not saved(Attempt all Letters to save accuracy)",Toast.LENGTH_SHORT).show();
             }
-
-
-
 
 
             total = 0;
@@ -327,11 +284,28 @@ public class characters_evaluation extends AppCompatActivity {
 
 
 
-
-
             if(level<9) {
                 level++;
                 levelno.setText("Lesson - "+(level+1));
+                String next = (level+2)+"";
+                if(level==9){
+                    next = "N/A";
+                }
+                new AlertDialog.Builder(this)
+                        .setTitle("Lesson Information")
+                        .setMessage("Current Lesson          : "+(level+1)+"\n"
+                                +   "Lesson(s) Remaining: "+(10-(level+1))+"\n"
+                                +   "Next Lesson                : "+(next)+"\n"
+                                +   "Accuracy of previous Lesson: "+accuracy_previous_level)
+                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                // Continue with delete operation
+                            }
+                        })
+//                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .show();
+
+
             }
             if(level==1) {
                 image0.setImageResource(R.drawable.a004);
@@ -494,7 +468,7 @@ public class characters_evaluation extends AppCompatActivity {
             dialog.dismiss();
 
             dialog.setCancelable(true);
-
+            cardView = (CardView) mainGrid.getChildAt(letter_clicked);
             if(level==0) {
 
                 if(letter_clicked==0){
@@ -634,14 +608,14 @@ public class characters_evaluation extends AppCompatActivity {
 
 
 
-            image0.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_0=1;
 
         }else{
 
-            image0.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_0=0;
         }
@@ -651,13 +625,13 @@ public class characters_evaluation extends AppCompatActivity {
     public void checkBaa(String sound){
 
         if(sound.equals("baa")){
-            image1.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_1=1;
 
         }else{
-            image1.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_1=0;
         }
@@ -668,13 +642,13 @@ public class characters_evaluation extends AppCompatActivity {
 
 
         if(sound.equals("taa")){
-            image2.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_2=1;
 
         }else{
-            image2.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_2=0;
 
@@ -687,13 +661,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("saa")){
 
-            image0.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_0=1;
         }else{
 
-            image0.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_0=0;
         }
@@ -704,13 +678,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("jeem")){
 
-            image1.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_1=1;
         }else{
 
-            image1.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_1=0;
         }
@@ -721,13 +695,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("haa")){
 
-            image2.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_2=1;
         }else{
 
-            image2.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_2=0;
 
@@ -739,13 +713,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("khaa")){
 
-            image0.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_0=1;
         }else{
 
-            image0.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_0=0;
         }
@@ -756,13 +730,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("daal")){
 
-            image1.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_1=1;
         }else{
 
-            image1.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_1=0;
         }
@@ -773,13 +747,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("zaal")){
 
-            image2.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_2=1;
         }else{
 
-            image2.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_2=0;
 
@@ -791,13 +765,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("raa")){
 
-            image0.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_0=1;
         }else{
 
-            image0.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_0=0;
         }
@@ -808,13 +782,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("zaa")){
 
-            image1.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_1=1;
         }else{
 
-            image1.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_1=0;
         }
@@ -825,13 +799,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("seen")){
 
-            image2.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_2=1;
         }else{
 
-            image2.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_2=0;
 
@@ -844,13 +818,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("sheen")){
 
-            image0.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_0=1;
         }else{
 
-            image0.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_0=0;
         }
@@ -861,13 +835,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("sawd")){
 
-            image1.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_1=1;
         }else{
 
-            image1.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_1=0;
         }
@@ -878,13 +852,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("dawd")){
 
-            image2.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_2=1;
         }else{
 
-            image2.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_2=0;
 
@@ -896,13 +870,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("taw")){
 
-            image0.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_0=1;
         }else{
 
-            image0.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_0=0;
         }
@@ -913,13 +887,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("zaw")){
 
-            image1.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_1=1;
         }else{
 
-            image1.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_1=0;
         }
@@ -930,13 +904,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("aien")){
 
-            image2.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_2=1;
         }else{
 
-            image2.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_2=0;
 
@@ -948,13 +922,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("ghaien")){
 
-            image0.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_0=1;
         }else{
 
-            image0.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_0=0;
         }
@@ -965,13 +939,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("faa")){
 
-            image1.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_1=1;
         }else{
 
-            image1.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_1=0;
         }
@@ -982,13 +956,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("kawf")){
 
-            image2.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_2=1;
         }else{
 
-            image2.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_2=0;
 
@@ -1000,13 +974,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("kaaf")){
 
-            image0.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_0=1;
         }else{
 
-            image0.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_0=0;
         }
@@ -1017,13 +991,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("laam")){
 
-            image1.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_1=1;
         }else{
 
-            image1.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_1=0;
         }
@@ -1034,13 +1008,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("meem")){
 
-            image2.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_2=1;
         }else{
 
-            image2.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_2=0;
 
@@ -1052,13 +1026,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("noon")){
 
-            image0.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_0=1;
         }else{
 
-            image0.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_0=0;
         }
@@ -1069,13 +1043,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("wow")){
 
-            image1.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_1=1;
         }else{
 
-            image1.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_1=0;
         }
@@ -1086,14 +1060,14 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("hay")){
 
-            image0.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_0=1;
 
         }else{
 
-            image0.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_0=0;
         }
@@ -1104,13 +1078,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("hay")){
 
-            image2.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_2=1;
         }else{
 
-            image2.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_2=0;
 
@@ -1122,13 +1096,13 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("hamza")){
 
-            image1.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_1=1;
         }else{
 
-            image1.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_1=0;
         }
@@ -1139,18 +1113,17 @@ public class characters_evaluation extends AppCompatActivity {
 
         if(sound.equals("yaa")){
 
-            image2.setBackgroundResource(R.color.greenColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
             Toast.makeText(characters_evaluation.this,"Correct Pronounciation",Toast.LENGTH_LONG).show();
 
             acc_2=1;
         }else{
 
-            image2.setBackgroundResource(R.color.redColor);
+            cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
             acc_2=0;
 
         }
-
     }
     private void setWhiteBackGround(){
         for (int i = 0; i < mainGrid.getChildCount()-1; i++) {

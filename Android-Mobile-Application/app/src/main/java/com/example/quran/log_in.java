@@ -113,16 +113,23 @@ public class log_in extends AppCompatActivity {
                                     Toast.makeText(log_in.this,"Email cannot be empty",Toast.LENGTH_SHORT).show();
                                     return;
                                 }
-
-                                if(TextUtils.isEmpty(edt_register_name.getText()))
-                                {
-                                    Toast.makeText(log_in.this,"Name cannot be empty",Toast.LENGTH_SHORT).show();
+                                else if(!edt_register_email.getText().toString().matches("[a-zA-Z0-9._-]+@[a-z]+.[a-z]+")){
+                                    Toast.makeText(log_in.this,"Email format is not correct",Toast.LENGTH_SHORT).show();
                                     return;
                                 }
 
-                                if(TextUtils.isEmpty(edt_register_password.getText()))
+                                else if(TextUtils.isEmpty(edt_register_name.getText()) || edt_register_name.getText().toString().length()<2)
                                 {
-                                    Toast.makeText(log_in.this,"Password cannot be empty",Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(log_in.this,"Name cannot be less than two characters",Toast.LENGTH_SHORT).show();
+                                    return;
+                                }else if(edt_register_name.getText().toString().matches(".*\\d.*")){
+                                    Toast.makeText(log_in.this,"Name cannot contain numbers",Toast.LENGTH_SHORT).show();
+                                    return;
+                                }
+
+                                else if(TextUtils.isEmpty(edt_register_password.getText())|| edt_register_password.getText().toString().length()<5)
+                                {
+                                    Toast.makeText(log_in.this,"Password cannot be less than 5 characters",Toast.LENGTH_SHORT).show();
                                     return;
                                 }
 

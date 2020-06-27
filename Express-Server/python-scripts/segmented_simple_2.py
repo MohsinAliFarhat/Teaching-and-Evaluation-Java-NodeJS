@@ -33,7 +33,7 @@ def extract_features(file_name):
     return mfccsscaled
 
 
-def detect_leading_silence(sound, silence_threshold=-25, chunk_size=10):
+def detect_leading_silence(sound, silence_threshold=-30, chunk_size=10):
 
         '''
         sound is a pydub.AudioSegment

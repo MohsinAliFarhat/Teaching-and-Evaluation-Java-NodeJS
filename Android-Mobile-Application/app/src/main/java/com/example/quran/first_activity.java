@@ -1,5 +1,7 @@
 package com.example.quran;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -87,10 +89,29 @@ public class first_activity extends AppCompatActivity implements NavigationView.
 
         if(item.toString().equals("Log Out")){
 
-            SQLiteDatabase db = openOrCreateDatabase("quran", MODE_PRIVATE, null);
-            db.execSQL("DROP TABLE user;");
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            startActivity(intent);
+
+            new AlertDialog.Builder(this)
+                    .setTitle("Log out?")
+                    .setMessage("Are you sure?")
+
+                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            // Continue with delete operation
+                            SQLiteDatabase db = openOrCreateDatabase("quran", MODE_PRIVATE, null);
+                            db.execSQL("DROP TABLE user;");
+                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            startActivity(intent);
+                        }
+                    }).setNegativeButton(android.R.string.no,new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                    // Continue with delete operation
+                }
+            })
+//                        .setIcon(android.R.drawable.ic_dialog_alert)
+                    .show();
+
+
+
 
         }else if(item.toString().equals("Check Overall Accuracy")){
 

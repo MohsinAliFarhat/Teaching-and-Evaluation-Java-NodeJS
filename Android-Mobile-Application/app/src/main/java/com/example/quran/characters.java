@@ -23,8 +23,6 @@ public class characters extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_characters);
 
-
-
         Toolbar toolbar =  findViewById(R.id.oldtoolbar);
         toolbar.setTitle("Characters");
         toolbar.setLogo(R.drawable.book_pic);
@@ -59,8 +57,7 @@ public class characters extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    setWhiteBackGround();
-                    cardView.setCardBackgroundColor(0xF1F1F1);
+                    cardView.setCardBackgroundColor(Color.parseColor("#57FF22"));
 
                     if(check==0) {
                         playAudio(finalI);
@@ -75,13 +72,10 @@ public class characters extends AppCompatActivity {
         }
     }
 
-/////////////////////////////////////////////////-- Handling mediaPlayer////////////////////////////////////////////////////////////////////////////////
-
 
 
     private void playAudio(int x)
     {
-        //////////////////////////////////////////////////////// -- Code to add audios-- //////////////////////////////////////////////////////////////////////////////////////////////////
 
 
         if(x == 0)
