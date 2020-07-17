@@ -57,12 +57,30 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/quran/qibla.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/quran/characters_diacritics_evaluation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-696">
-              <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+            <state relative-caret-position="374">
+              <caret line="725" column="1" lean-forward="true" selection-start-line="725" selection-start-column="1" selection-end-line="725" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/quran/characters_evaluation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="285" lean-forward="true" selection-start-line="285" selection-end-line="285" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/quran/words_evaluation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="125" column="4" selection-start-line="125" selection-start-column="4" selection-end-line="125" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -101,7 +119,6 @@
       <find>level_send_to_server</find>
       <find>acc</find>
       <find>acc_1</find>
-      <find>acc_0</find>
       <find>acc_2</find>
       <find>text</find>
       <find>id</find>
@@ -112,6 +129,7 @@
       <find>checkButton</find>
       <find>card</find>
       <find>cardView</find>
+      <find>acc_0</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,11 +184,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/quran/words.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/quran/characters_diacritics.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/quran/levelInfo.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/quran/characters_diacritics_evaluation.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/quran/words_evaluation.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/quran/characters_evaluation.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/quran/first_activity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/quran/characters_diacritics_evaluation.java" />
       </list>
     </option>
   </component>
@@ -185,7 +203,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -208,7 +226,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -371,9 +389,9 @@
       <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49924356" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.1295302" side_tool="true" weight="0.38526914" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Build" order="6" sideWeight="0.83557045" visible="true" weight="0.16572239" />
+      <window_info anchor="bottom" id="Build" order="6" sideWeight="0.83557045" weight="0.16572239" />
       <window_info anchor="bottom" id="Find" order="7" sideWeight="0.4986577" weight="0.23796034" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" />
       <window_info anchor="bottom" id="Logcat" order="9" sideWeight="0.75838923" weight="0.5694051" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
@@ -675,20 +693,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/quran/levelInfo.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/quran/characters_diacritics_evaluation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/quran/words_evaluation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1251">
-          <caret line="157" selection-start-line="157" selection-end-line="159" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/quran/ui/home/HomeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -746,17 +750,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/quran/characters_evaluation.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/quran/qibla.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="293" selection-start-line="293" selection-end-line="305" selection-end-column="32" />
+        <state relative-caret-position="40">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/quran/qibla.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/quran/characters_diacritics_evaluation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-696">
-          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        <state relative-caret-position="374">
+          <caret line="725" column="1" lean-forward="true" selection-start-line="725" selection-start-column="1" selection-end-line="725" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/quran/characters_evaluation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="285" lean-forward="true" selection-start-line="285" selection-end-line="285" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/quran/words_evaluation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="125" column="4" selection-start-line="125" selection-start-column="4" selection-end-line="125" selection-end-column="4" />
         </state>
       </provider>
     </entry>

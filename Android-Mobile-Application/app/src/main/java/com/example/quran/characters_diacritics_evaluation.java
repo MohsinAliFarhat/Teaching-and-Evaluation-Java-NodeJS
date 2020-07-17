@@ -518,7 +518,7 @@ public class characters_diacritics_evaluation extends AppCompatActivity {
 
             cardView.setCardBackgroundColor(Color.parseColor("#FF4242"));
             Toast.makeText(characters_diacritics_evaluation.this,"Incorrect Pronounciation",Toast.LENGTH_LONG).show();
-
+            acc_2=0;
         }
     }
 

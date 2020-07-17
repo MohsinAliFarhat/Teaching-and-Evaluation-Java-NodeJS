@@ -86,9 +86,9 @@ def noise_and_silence_removal():
         if(cat=="0"):
             print("kaaf")
         elif(cat=="1"):
-            print("meem")
-        elif(cat=="2"):
             print("laam")
+        elif(cat=="2"):
+            print("meem")
         else:
             print("Noise")
         

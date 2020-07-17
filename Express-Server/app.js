@@ -14,7 +14,7 @@ var diacriticsRouter = require("./routes/diacritics.js");
 var wordRouter = require("./routes/words.js");
 
 
-//Connection to mongoDB
+//Connection to mongoDB C:\Users\MOHSIN\Anaconda3\Scripts\activate.bat
 mongoose
 .connect("mongodb://localhost:27017/QuranDb" , {useNewUrlParser:true, useUnifiedTopology:true})
 .then(()=>console.log("MongoDB connected."))
@@ -706,7 +706,7 @@ fs.writeFile(path,data,'binary',function(err){
    .output('python-scripts/mono.wav')
    .run();
  
-  //Code to run python code and perform prediction
+  //Code to run python code and perform prediction 
 
   var exec = require("child_process").exec; 
   //running python script
@@ -847,7 +847,7 @@ fs.writeFile(path,data,'binary',function(err){
   var exec = require("child_process").exec; 
   //running python script
   console.log(`[INFO] Computing`);
-  exec(`C:\\Users\\MOHSIN\\Anaconda3\\python.exe python-scripts\\words_3.py`,function(err,stdout,stderr){
+  exec(`C:\\Users\\MOHSIN\\Anaconda3\\python.exe python-scripts\\segmented_words_3.py`,function(err,stdout,stderr){
     if(err){
         console.log(err);
         return;
